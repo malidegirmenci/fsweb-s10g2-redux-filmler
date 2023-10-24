@@ -14,11 +14,11 @@ Bu projede, küçük bir film veritabanı içeren bir web uygulamasında çalı�
 
 ### Görev 1: Proje Kurulumu
 
-- [ ] Forklayın.
-- [ ] Klonlayın
-- [ ] Ana dizine gidin
-- [ ] `npm install`
-- [ ] `npm start`
+- [X] Forklayın.
+- [X] Klonlayın
+- [X] Ana dizine gidin
+- [X] `npm install`
+- [X] `npm start`
 
 ### Görev 2: Proje Gereksinimleri
 
@@ -26,26 +26,26 @@ Bu projede, küçük bir film veritabanı içeren bir web uygulamasında çalı�
 
 > _DOM ve film reducer fonksiyonu sizin için hazırlandı, ancak onu redux'a bağlamak size bırakıldı._
 
-- [ ] Redux store'u yaratmak için `createStore` fonksiyonunu kullanın.
-- [ ] Redux store'u React uygulaması ile ilişkilendirmek için `Provider` bileşenini kullanın.
+- [X] Redux store'u yaratmak için `createStore` fonksiyonunu kullanın.
+- [X] Redux store'u React uygulaması ile ilişkilendirmek için `Provider` bileşenini kullanın.
 
 #### Film reducerını bağlamak
 
 > _`src/reducers/movieReducers.js` içerisinde `reducer` fonksiyonu ve `initialState` öntanımlı olarak gelmektedir. Filmler datası `initialState` içerisine eklenmiştir._
 
-- [ ] `movieReducer.js` içindeki `initialState` reducer'ın başlangıç değeri olarak atanmalıdır.
+- [X] `movieReducer.js` içindeki `initialState` reducer'ın başlangıç değeri olarak atanmalıdır.
 
-- [ ] **MovieList bileşeni, tüm filmlerimizi ekrana yazdırır.**
+- [X] **MovieList bileşeni, tüm filmlerimizi ekrana yazdırır.**
       MovieList component'i içerisindeki `movies` datası redux store'dan çekilmelidir. `react-redux` içerisinden `useSelector` hookunu kullanarak `movies` değerine erişin.
 
-- [ ] **`AppHeader` component'i, başlık metnini görüntülemek için `appTitle` değişkenini kullanır.**  
+- [X] **`AppHeader` component'i, başlık metnini görüntülemek için `appTitle` değişkenini kullanır.**  
       `appTitle` değeri redux store'dan çekilmelidir.
 
-- [ ] Son olarak `Movie` componentindeki `movies` datası yine redux store içerisinden çekilmelidir.
+- [X] Son olarak `Movie` componentindeki `movies` datası yine redux store içerisinden çekilmelidir.
 
 #### Sil ve Film Ekle eylemlerini bağlama
 
-- [ ] `movieReducers` dosyası içerisinde `deleteMovie` için yazılmış bir kod bloğu olduğunu ve `movieActions` dosyası içerisinde ilgili **action generator**'ın zaten mevcut olduğunu unutmayın.
+- [X] `movieReducers` dosyası içerisinde `deleteMovie` için yazılmış bir kod bloğu olduğunu ve `movieActions` dosyası içerisinde ilgili **action generator**'ın zaten mevcut olduğunu unutmayın.
 
 - **Silme Action'ı: Movie componentinde** 
   - Silme işleminin tetiklemesi gereken HTML öğesini bulun ve `event handler` oluşturup ve bu DOM öğesine bağlayın.
@@ -56,13 +56,13 @@ Bu projede, küçük bir film veritabanı içeren bir web uygulamasında çalı�
 &nbsp;
 
 - **Film Ekleme Action'ı:**
-  - [ ] movieReducer.js'ye bir `ADD_MOVIE` case'i ekleyin.
-  - [ ] Bu yeni case'in, `payload` aracılığıyla iletilen film datasını `movies` listesine ekleyin.
-  - [ ] `movieActions.js`'de `addMovie` için bir action generator oluşturun.
-  - [ ] Bir filmin eklenmesini tetikleyen componenti bulun ve `addMovie` action'ını bağlayın.
-  - [ ] `addMovie`'yi çağırmak için gerekli event handlerı oluşturun ve bağlayın.
-  - [ ] Yeni bir film eklerken `id` değeri olarak `Date.now()` kullanın.
-  - [ ] Film eklendikten sonra filmler sayfasına yönlendirmek için `push('/movies/')` komutunu ekleyin.
+  - [X] movieReducer.js'ye bir `ADD_MOVIE` case'i ekleyin.
+  - [X] Bu yeni case'in, `payload` aracılığıyla iletilen film datasını `movies` listesine ekleyin.
+  - [X] `movieActions.js`'de `addMovie` için bir action generator oluşturun.
+  - [X] Bir filmin eklenmesini tetikleyen componenti bulun ve `addMovie` action'ını bağlayın.
+  - [X] `addMovie`'yi çağırmak için gerekli event handlerı oluşturun ve bağlayın.
+  - [X] Yeni bir film eklerken `id` değeri olarak `Date.now()` kullanın.
+  - [X] Film eklendikten sonra filmler sayfasına yönlendirmek için `push('/movies/')` komutunu ekleyin.
 
 #### Favoriler reducerı oluşturun
 
