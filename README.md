@@ -68,22 +68,22 @@ Bu projede, küçük bir film veritabanı içeren bir web uygulamasında çalı�
 
 > _Tebrikler 👏 Artık film reducerı tamamlandığına göre, favori film özelliği için sıfırdan bir reducer oluşturabiliriz. Reducerları birleştirme (`combineReducers`) konusunda çalışacağız._
 
-- [ ] Favoriler özelliği için bir **reducer dosyası** oluşturun. Bu dosyada kullanacağınız `initialState` objesine aşağıdaki değerlerini ekleyin:
+- [X] Favoriler özelliği için bir **reducer dosyası** oluşturun. Bu dosyada kullanacağınız `initialState` objesine aşağıdaki değerlerini ekleyin:
 
   - `favorites { Film[] }`: Film nesnesini içeren bir dizi (başlangıç değeri `[]`).
   - `displayFavorites { Boolean }`: Uygulamada favorilerin göster/gizle değerini tutan bir boolean (başlangıç değeri `false`). 
 
-- [ ] `switch` deyimine `default` case'ini ekleyin.
+- [X] `switch` deyimine `default` case'ini ekleyin.
 
-- [ ] Yeni reducerınızı `./reducers/index.js` dosyasına import edin.
+- [X] Yeni reducerınızı `./reducers/index.js` dosyasına import edin.
 
-- [ ] `reducers/index.js`'de hem `moviesReducer`'ı hem de favori reducer'ı redux'a bağlamak için `combineReducers` metodunu kullanın.
+- [X] `reducers/index.js`'de hem `moviesReducer`'ı hem de favori reducer'ı redux'a bağlamak için `combineReducers` metodunu kullanın.
 
-- [ ] **Film işlevlerinizin artık çalışmadığına dikkat edin. Neden?** &nbsp;`movieReducer`a bağlı componentlerin tekrar çalışmasını sağlamak için gerekli değişiklikleri yapın.
+- [X] **Film işlevlerinizin artık çalışmadığına dikkat edin. Neden?** &nbsp;`movieReducer`a bağlı componentlerin tekrar çalışmasını sağlamak için gerekli değişiklikleri yapın.
 
-- [ ] Store içerisinden `favorites` değerini `FavoriteMovieList` componentine bağlayın ve test edin.
+- [X] Store içerisinden `favorites` değerini `FavoriteMovieList` componentine bağlayın ve test edin.
 
-- [ ] `DisplayFavorites` değerini store içerisinden çekerek `Movie` ve `AppHeader` componentinde ilgili yerlerde kullanın.
+- [X] `DisplayFavorites` değerini store içerisinden çekerek `Movie` ve `AppHeader` componentinde ilgili yerlerde kullanın.
 
 #### Favoriler eylemleri ekleyin
 
