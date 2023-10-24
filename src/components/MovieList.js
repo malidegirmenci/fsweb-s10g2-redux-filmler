@@ -2,7 +2,7 @@ import React from 'react';
 
 import MovieListItem from './MovieListItem';
 import MovieListFooter from './MovieListFooter';
-import { useSelector, useD } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 const MovieList = (props) => {
   const movies = useSelector(store => store.movies.movies)
