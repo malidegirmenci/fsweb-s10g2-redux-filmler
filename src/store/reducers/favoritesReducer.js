@@ -6,17 +6,8 @@ const initialState = {
 }
 
 const reducer = (state = initialState, action) => {
-    let movie;
-    let foundedMovie;
-    if(action.payload) {
-        movie = action.payload
-        //console.log("id", movie.id)
-        foundedMovie = state.favorites.find(item=>(movie.id === item.id))
-        //console.log("foundedMovie: ",foundedMovie);
-    }else {
-        console.log("yet not loaded payload!");
-    }
-    
+
+
 
     switch (action.type) {
         case REMOVE_FAVORITE:
@@ -25,6 +16,16 @@ const reducer = (state = initialState, action) => {
                 favorites: state.favorites.filter(item => (action.payload !== item.id))
             }
         case ADD_FAVORITE:
+            let movie;
+            let foundedMovie;
+            if (action.payload) {
+                movie = action.payload
+                //console.log("id", movie.id)
+                foundedMovie = state.favorites.find(item => (movie.id === item.id))
+                //console.log("foundedMovie: ",foundedMovie);
+            } else {
+                console.log("yet not loaded payload!");
+            }
             return {
                 ...state,
                 favorites: foundedMovie !== undefined ? [...state.favorites] : [...state.favorites, action.payload]

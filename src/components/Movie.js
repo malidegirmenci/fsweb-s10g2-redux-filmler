@@ -8,8 +8,8 @@ const Movie = (props) => {
   //console.log("id", id);
   const { push } = useHistory();
   const dispatch = useDispatch();
-  const movies = useSelector(store => store.movies.movies)
-  const displayFavorites = useSelector(store => store.favorites.displayFavorites);
+  const movies = useSelector(store => store.movieReducer.movies)
+  const displayFavorites = useSelector(store => store.favoriteReducer.displayFavorites);
   const movie = movies.find(movie => movie.id === Number(id));
 
   const deletedMovie = (id) => {

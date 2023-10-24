@@ -11,7 +11,6 @@ import AddMovieForm from './components/AddMovieForm';
 import FavoriteMovieList from './components/FavoriteMovieList';
 
 const App = props => {
-  const displayFavorites = true;
 
   return (
     <div>
@@ -22,7 +21,7 @@ const App = props => {
       <div className="max-w-4xl mx-auto px-3 pb-4">
         <AppHeader />
         <div className="flex flex-col sm:flex-row gap-4">
-          {displayFavorites && <FavoriteMovieList />}
+          <FavoriteMovieList />
 
           <Switch>
             <Route exact path="/movies/add">

@@ -25,6 +25,7 @@ const AddMovieForm = (props) => {
     push('/movies')
   }
   const handleSubmit = (e) => {
+    e.preventDefault();
     saveMovie(movie);
   }
 
